@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+        }
+ 
+    </style>
+<nav>
+    <a href="#about us">About Us</a>
+    <a href="#menu">Menu</a>
+    <a href="#reservation">Reservations</a>
+    <a href="#" data-page="signup">Sign Up</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header>
+    <h1 class="noto-serif-jp-header">RAHMAT - THE FINE DINING RESTAURANT</h1>
+</header>
+
+<style>
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 4em;
+        color: black; /* Title color set to black */
+        margin-top: 20px;
+    }
+</style>
+
+<div class="container">
+    <!--About Us Section-->
+    <section id="about us">
+     <h2>Introduction</h2>
+     <p>Rahmat is a fine dining restaurant serving The Authentic Indian Cuisine. We bring the rich flavours of India to your plate with authenticity and love.
+         Our restaurant offers a menu inspired by Traditional recipes passed down through genrations. From North to the South every dish is crafted with the finest ingredients to deliver an unforgettable dining experience.
+     </p>
+    </section>
+
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Signature Dishes</h2>
+        <div class="menu-container">
+           <div class="menu-item">
+            <img src="project/frontend/images/BUTTER CHICKEN.jpg" alt="Dish Image">
+            <div class="menu-item-content">
+                <h3>Butter Chicken - A Flavourful Legacy</h3>
+                <p>Our Signature Butter Chicken is crafted to perfection weather you're a first time explorer of Indian cuisine or a seasoned foodie,this dish promises a comforting and unforgettable experience.  .</p>
+                <p class="price">25 AED</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="project/frontend/images/hcb.jpg" alt="Hyderabadi Chicken Biryani">
+            <div class="menu-item-content">
+                <h3>Hyderabadi Chicken Biryani</h3>
+                <p>Tender pieces of chicken marinated in a special Hyderabadi masala, layered with aromatic basmati rice, potato and fried onions, cooked on dum in a sealed earthen pot.</p>
+                <p class="price">35 AED</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="project/frontend/images/tm.jpg" alt="Tandoori Murgh">
+            <div class="menu-item-content">
+                <h3>Tandoori Murgh</h3>
+                <p>Classic grilled chicken marinated in a special tandoori masala flavoured yoghurt;served bone-in.</p>
+                <p class="price">24 AED</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="project/frontend/images/ptm.jpg" alt="Paneer Tikka Masala">
+            <div class="menu-item-content">
+                <h3>Paneer Tikka Masala</h3>
+                <p>Grilled paneer cubes simmered in a rich, spiced tomato gravy. Smoky, creamy, and packed with bold Indian flavors.</p>
+                <p class="price">18 AED</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="project/frontend/images/md.jpg" alt="Masala Dosa">
+            <div class="menu-item-content">
+                <h3>Masala Dosa</h3>
+                <p>A crispy, golden rice crepe filled with a spiced potato mash. Served with chutneys and sambar, it's the perfect blend of crunch and flavor!</p>
+                <p class="price">12 AED</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="project/frontend/images/ml.jpg" alt="Mango Lassi">
+            <div class="menu-item-content">
+                <h3>Mango Lassi</h3>
+                <p>A refreshing yogurt-based drink blended with sweet mangoes and a hint of cardamom.</p>
+                <p class="price">15 AED</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    
+    <!-- Reservation Section -->
+    <section id="reservation">
+        <h2>Make a Reservation</h2>
+        <form class="reservation-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="date" required>
+            <input type="time" required>
+            <input type="number" placeholder="Number of Guests" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: Al Qusais 2, Dubai</p>
+        <p>Phone: 971-542357382</p>
+        <p>Email: dubai@rahmatgmail.com  </p>
+    </section>
+
+<footer>
+    &copy; 2024 RAHMAT. All rights reserved.
+</footer>
+        
+<style>
+/* General Reset */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem; /* Add gap between menu items */
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Ensures menu items are evenly spaced */
+}
+
+.menu-item img {
+    width: 100%; /* Make the image take up the full width of its container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure images maintain their aspect ratio without distortion */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.menu-item-content {
+    padding: 1rem;
+}
+
+.menu-item-content h3 {
+    margin: 0;
+    color: #333;
+}
+
+.menu-item-content p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.menu-item-content .price {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    margin-top: 2rem;
+}
+
+.reservation-form {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form input,
+.reservation-form button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.reservation-form button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.reservation-form button:hover {
+    background-color: #e55a5a;
+}
+</style>
+
+        <!-- Signup Page -->
+        <div id="signup" class="page hidden">
+            <div class="form-container">
+                <h2>Sign Up</h2>
+                <input type="text" id="signup-name" placeholder="Enter your name" required>
+                <input type="email" id="signup-email" placeholder="Enter your email" required>
+                <input type="password" id="signup-password" placeholder="Enter password" required>
+                <button id="signup-btn">Sign Up</button>
+                <p id="signup-error" style="color: red; display: none;">Please fill in all fields.</p>
+            </div>
+        </div>
+
+       
+
+    <script>
+       // Navigation functionality
+const pages = document.querySelectorAll('.page');
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault();
+        const targetPage = link.getAttribute('data-page');  // Get target page
+        
+        if (targetPage) {
+            // Hide all pages
+            pages.forEach(page => page.classList.add('hidden'));
+
+            // Show the target page
+            document.getElementById(targetPage).classList.remove('hidden');
+        }
+    });
+});
+
+// Signup Functionality
+document.getElementById('signup-btn').addEventListener('click', async () => {
+    const name = document.getElementById('signup-name').value.trim();
+    const email = document.getElementById('signup-email').value.trim();
+    const password = document.getElementById('signup-password').value.trim();
+    const error = document.getElementById('signup-error');
+
+    if (name && email && password) {
+        try {
+            const response = await fetch('http://localhost:4005/api/user/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email, password }),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                alert('You are successfully signed up!');
+                error.style.display = 'none';
+                document.getElementById('signup').classList.add('hidden');
+                document.getElementById('login').classList.remove('hidden');
+            } else {
+                error.textContent = data.message || 'Sign Up Failed!';
+                error.style.display = 'block';
+            }
+        } catch (err) {
+            error.textContent = 'An error occurred. Please try again later.';
+            error.style.display = 'block';
+        }
+    } else {
+        error.textContent = 'All fields are required!';
+        error.style.display = 'block';
+    }
+});
+
+    </script>
+
+    <style>
+    .hidden {
+        display: none;
+    }
+    </style>
+</body>
+</html>
